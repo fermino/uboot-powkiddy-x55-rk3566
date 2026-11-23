@@ -7,7 +7,7 @@
 # - Testing with qemu ?
 # - provides 'uboot' ?
 
-pkgname=uboot-rockchip-rk3566-powkiddy-x55
+pkgname=uboot-powkiddy-x55-rk3566
 pkgver=2026.10
 pkgrel=2
 pkgdesc="U-Boot for the Powkiddy X55 handheld (rockchip rk3566 based)"
@@ -44,7 +44,7 @@ package() {
     install -Dm644 -t "${pkgdir}/usr/lib/uboot/rockchip/rk3566/powkiddy-x55" idbloader.img
     install -Dm644 -t "${pkgdir}/usr/lib/uboot/rockchip/rk3566/powkiddy-x55" u-boot.itb
 
-    install -Dm644 -t "${pkgdir}/usr/share/licenses/uboot-rockchip-rk3566-powkiddy-x55/uboot/" 'Licenses/bsd-3-clause.txt'
-    install -Dm644 -t "${pkgdir}/usr/share/licenses/uboot-rockchip-rk3566-powkiddy-x55/uboot/" 'Licenses/gpl-2.0.txt'
-    install -Dm644 '../rkbin.LICENSE' "${pkgdir}/usr/share/licenses/uboot-rockchip-rk3566-powkiddy-x55/rkbin/LICENSE"
+    install -Dm644 -t "${pkgdir}/usr/share/licenses/${pkgname}/uboot/" 'Licenses/bsd-3-clause.txt'
+    install -Dm644 -t "${pkgdir}/usr/share/licenses/${pkgname}/uboot/" 'Licenses/gpl-2.0.txt'
+    install -Dm644 '../rkbin.LICENSE' "${pkgdir}/usr/share/licenses/${pkgname}/rkbin/LICENSE"
 }

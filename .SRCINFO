@@ -1,4 +1,4 @@
-pkgbase = uboot-rockchip-rk3566-powkiddy-x55
+pkgbase = uboot-powkiddy-x55-rk3566
 	pkgdesc = U-Boot for the Powkiddy X55 handheld (rockchip rk3566 based)
 	pkgver = 2026.10
 	pkgrel = 2
@@ -19,4 +19,4 @@ pkgbase = uboot-rockchip-rk3566-powkiddy-x55
 	sha256sums = c81ac7e8e1fd727cf7f0db62a9aaea760bde2b270e34d98eb264a264b86df749
 	sha256sums = d2765124a2c24d71aba3cbc6cdd6975a5a297821264eb6c26378a4c16cd16e92
 
-pkgname = uboot-rockchip-rk3566-powkiddy-x55
+pkgname = uboot-powkiddy-x55-rk3566
