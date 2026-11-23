@@ -28,6 +28,10 @@ sha256sums=('ead6c9d53c9c34a1154f8d797df9341533f5319cc367f79ce2848414899556ec'
 prepare() {
     cd "${srcdir}/u-boot"
     make powkiddy-x55-rk3566_defconfig
+    # The host tools' image signing uses OpenSSL's ENGINE API, which OpenSSL 4
+    # removed. Nothing here is signed, so build them without libcrypto.
+    # kwbimage (Marvell's boot image format, unused here) selects libcrypto.
+    scripts/config --disable TOOLS_LIBCRYPTO --disable TOOLS_KWBIMAGE
 }
 
 build() {
